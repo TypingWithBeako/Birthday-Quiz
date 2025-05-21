@@ -106,15 +106,16 @@ onUnmounted(() => {
 
 <style scoped>
 .countdown-container {
-  min-height: 100vh;
-  position: relative;
+  position: fixed; /* Change from relative to fixed */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 50; /* Higher z-index to ensure it's above everything */
+  overflow: hidden; /* Prevent scrolling */
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
-  cursor: pointer;
-  transition: opacity 0.8s ease-in-out;
-  animation: fadeIn 1s ease-in-out;
 }
 
 .birthday-background {

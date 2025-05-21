@@ -44,7 +44,7 @@ const questions = reactive<Question[]>([
     id: 2,
     text: 'Ông chú tóc nhọn như bông súp lơ này là ai?',
     image: '/images/vegeta-2.webp', // Image of Vegeta
-    options: ['Naruto', 'Vegeta', 'Deku', 'Natsuki Subaru'],
+    options: ['Naruto', 'Vegeta', 'Deku', 'Subaru'],
     correctAnswer: 1,
     explanation:
       'Đó là Vegeta! Ông này cả ngày chỉ la "KAKAROT!" và tức tối vì không phải là nhân vật chính. Mà tóc trông như cái súp lơ bị cắm điện ấy.',
