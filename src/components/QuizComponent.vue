@@ -25,6 +25,8 @@ const isDevelopment = process.env.NODE_ENV === 'development'
 const birthdayDate = new Date('2025-05-24')
 const isBeforeBirthday = ref(true)
 
+isBeforeBirthday.value = false
+
 const handleCountdownComplete = () => {
   isBeforeBirthday.value = false
 }
