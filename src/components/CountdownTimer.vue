@@ -16,7 +16,7 @@ const countdown = ref({
 
 let countdownInterval: ReturnType<typeof setInterval> | null = null
 
-const playSound = (soundFile) => {
+const playSound = (soundFile: string) => {
   const audio = new Audio(`/sounds/${soundFile}`)
   audio.volume = 0.5 // Adjust volume (0.0 to 1.0)
   audio.play()
